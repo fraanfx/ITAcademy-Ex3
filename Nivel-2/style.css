@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+   
+}
+html{
+    background-color: bisque;
+}
+img{
+   max-width: 100%;
+    height: auto;
+}
+body{
+
+}
+header {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: url(./tori-1976609_1920.jpg);
+    background-position: center;
+    background-position-y: center;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    background-color: bisque;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 500px;
+    justify-content: center;
+   
+
+
+}
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    background-color: bisque;
+}
+nav{
+    display: flex;
+    position: relative;
+    flex-flow: row nowrap;
+    width: 90%;
+    max-height: 40px;
+    justify-content: space-between;
+    margin:  0 auto;
+    z-index: 10;
+    align-items: center;
+    min-height: 50px;
+   
+    background-color: transparent;
+    padding: 10px 0;
+    
+}
+.logo-container{
+    width: 48px;
+    height: auto;
+    max-height: 40px;
+}
+nav > ul{
+    display:flex;
+    flex-direction: row;
+    z-index: 10;
+}
+nav > ul > li {
+    color: dimgray;
+    margin-right: 30px;
+    cursor: pointer;
+}
+nav > ul > li:nth-last-child(1) {
+    margin-right: 0px;
+}
+nav > ul > li:hover{
+    color: firebrick;
+}
+nav > ul > li > i{
+    color: inherit;
+    margin-right: 5px;
+}
+nav > ul > li > a{
+    color: inherit;
+}
+
+header > h2{
+    top: 50%;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    opacity: 0.5;
+}
+.container{
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: auto;
+   
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+
+
+/*Container*/
+.container-grid{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    width: 66%;
+    background-color: lightgrey;
+    
+}
+.grid-item{
+    margin: 10px 10px;
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
+.img-item-container{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+    background-image: url("./cherry-blossoms-1317308_640.jpg");
+
+}
+.absolut-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    align-self: baseline;
+    top: 0;
+    left: 0;
+}
+.absolut-container span{
+    width: 95%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.date{
+    margin: -4px;
+    color: #fff;
+}
+.text{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 95%;
+    margin: 20px auto;
+
+}
+.cultura-container{
+ display: flex;
+ width: 100%;   
+ min-height: 30px;
+ background-color: red;
+ position: relative;
+
+}
+.cultura-container h2{
+    color: lightgrey;
+    position: absolute;
+    padding: 0 2.5%;
+    width: 100%;
+    bottom: -7px;
+   
+}
+.text p{
+
+}
+
+.text a{
+    cursor: pointer;
+    margin-top: 10px;
+    color:darkslategrey;
+}
+.text a:hover{
+    color: red;
+}
+.last-grid-item{
+   
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    margin: 10px 5px;
+    background-color: red;
+}
+.last-grid-item p {
+    color: #fff;
+
+}
+.container-text{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.container-text p{
+    color: #fff;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    margin: 20px 0;
+}
+footer > p {
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .container-grid{
+        width: 100%;
+    }
+    .container-text{
+        margin-top: 10px;
+        width: 100%;
+    }
+    nav > ul > li > i{
+        font-size: 15px;
+    }
+    nav > ul > li > a{
+        font-size: 15px;
+    }
+    nav > ul > li {
+        color: dimgray;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
+
+
+@media(max-width: 600px){
+    .grid-item{
+        width: 100%;
+    }
+    nav > ul > li > i{
+        font-size: 10px;
+    }
+    nav > ul > li > a{
+        font-size: 10px;
+    }
+}

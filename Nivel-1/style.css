@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    top: 0;
+    padding: 0;
+}
+
+main{
+    margin: 10px 0;
+    background-color: #fff;
+}
+section {
+    margin: 10px auto;
+}
+.c1{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px auto;
+    width: 90%;
+    min-height: 40px;
+    background-color: #000;
+}
+.c1-end{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 90%;
+    background-color: #000;
+}
+.c1-c1{
+    display: grid;
+    width: 90%;
+    min-height: 40px;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: blue;
+    margin: 10px auto;
+}
+.c1-c1 > div{
+    min-height: 40px;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: red;
+    margin: 10px auto;
+    width: 90%;
+}
+.c1-c2{
+    
+    width: 90%;
+    min-height: 40px;
+    grid-template-columns: 1fr;
+    background-color: orange;
+    margin: 15px auto;
+}
+.c1-c2-c1{
+    width: 90%;
+    min-height: 40px;
+    grid-template-columns: 1fr;
+    background-color: yellow;
+    margin: 20px auto;
+}
+
+.c1.center-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+.c2-grid{
+    display: flex;
+    width: 90%;
+   flex-flow: row wrap;
+    margin: 20px auto;
+    align-items: center;
+
+    background-color: purple;
+}
+.c2-grid > div:nth-child(1), .c2-grid > div:nth-child(2), .c2-grid > div:nth-child(3), .c2-grid > div:nth-child(4){
+    margin: 20px auto;
+    background-color: royalblue;
+    flex-basis: 40%;
+    min-height: 50px;
+    
+}
+.c2-grid > div:nth-child(5){
+    margin: 20px auto;
+    flex-basis: 90%;
+    min-height: 50px;
+    background-color: cadetblue;
+}
+
+.c2-grid-2{
+    display: grid;
+    margin: 20px auto;
+    width: 90%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: red;
+}
+.c2-grid-2 .c2-1{
+    width: 90%;
+    margin: 10px auto;
+    background-color: bisque;
+
+}
+
+.c2-grid-2 .c2-2{
+    width: 90%;
+    margin: 10px auto;
+    background-color: bisque;
+}
+
+
+.c1-c3{
+    display: grid;
+    margin: 20px auto;
+    width: 95%;
+    background-color: orange;
+    min-height: 20px;
+}
+@media(max-width: 1200px){
+    .c1.center-grid{
+        display: grid;
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .c2-grid-2{
+        display: grid;
+        margin: 20px auto;
+        width: 90%;
+        grid-template-rows: 1fr 1fr;
+        background-color: red;
+    }
+
+}
+@media(max-width: 600px){
+    
+}
