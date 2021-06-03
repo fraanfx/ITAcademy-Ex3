@@ -20,7 +20,7 @@ header {
     position: relative;
     display: flex;
     flex-flow: column nowrap;
-    background-image: url(./tori-1976609_1920.jpg);
+    background-image: url(./pictures/tori-1976609_1920.jpg);
     background-position: center;
     background-position-y: center;
     background-size: cover;
@@ -126,7 +126,7 @@ header > h2{
     flex-flow: column;
     width: 100%;
     height: auto;
-    background-image: url("./cherry-blossoms-1317308_640.jpg");
+    background-image: url("./pictures/cherry-blossoms-1317308_640.jpg");
 
 }
 .absolut-container{
@@ -204,7 +204,7 @@ header > h2{
 }
 .container-text p{
     color: #fff;
-   
+	margin: 0 5px;
     margin-bottom: 10px;
 }
 

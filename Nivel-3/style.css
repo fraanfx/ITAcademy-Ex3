@@ -20,7 +20,7 @@ header {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url(./tori-1976609_1920.jpg);
+    background-image: url(./pictures/tori-1976609_1920.jpg);
     background-position: center;
     background-position-y: center;
     background-size: cover;
@@ -136,7 +136,7 @@ header > h2{
     display: grid;
     width: 100%;
     height: auto;
-    background-image: url("./cherry-blossoms-1317308_640.jpg");
+    background-image: url("./pictures/cherry-blossoms-1317308_640.jpg");
 
 }
 .absolut-container{
